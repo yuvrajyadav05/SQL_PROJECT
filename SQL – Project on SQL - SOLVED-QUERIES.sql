@@ -43,14 +43,11 @@ SELECT * FROM Orders;
 copy books FROM 'D:/SQL/SQL_PROJECT/Books.csv' DELIMITER ',' CSV HEADER;
 
 -- Import Data into Customers Table
-COPY Customers(Customer_ID, Name, Email, Phone, City, Country) 
-FROM 'D:\Course Updates\30 Day Series\SQL\CSV\Customers.csv' 
-CSV HEADER;
+copy customers FROM 'D:/SQL/SQL_PROJECT/Customers.csv' DELIMITER ',' CSV HEADER;
+
 
 -- Import Data into Orders Table
-COPY Orders(Order_ID, Customer_ID, Book_ID, Order_Date, Quantity, Total_Amount) 
-FROM 'D:\Course Updates\30 Day Series\SQL\CSV\Orders.csv' 
-CSV HEADER;
+
 
 
 -- 1) Retrieve all books in the "Fiction" genre:
