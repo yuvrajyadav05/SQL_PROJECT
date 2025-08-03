@@ -40,9 +40,7 @@ SELECT * FROM Orders;
 
 
 -- Import Data into Books Table
-COPY Books(Book_ID, Title, Author, Genre, Published_Year, Price, Stock) 
-FROM 'D:\Course Updates\30 Day Series\SQL\CSV\Books.csv' 
-CSV HEADER;
+copy books FROM 'D:/SQL/SQL_PROJECT/Books.csv' DELIMITER ',' CSV HEADER;
 
 -- Import Data into Customers Table
 COPY Customers(Customer_ID, Name, Email, Phone, City, Country) 
