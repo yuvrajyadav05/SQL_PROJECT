@@ -47,7 +47,7 @@ copy customers FROM 'D:/SQL/SQL_PROJECT/Customers.csv' DELIMITER ',' CSV HEADER;
 
 
 -- Import Data into Orders Table
-
+copy orders FROM 'D:/SQL/SQL_PROJECT/Orders.csv' DELIMITER ',' CSV HEADER;
 
 
 -- 1) Retrieve all books in the "Fiction" genre:
